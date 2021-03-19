@@ -2,6 +2,12 @@
 
 <!--[![nodesource/node](http://dockeri.co/image/ericwang2006/ttnode)](https://hub.docker.com/r/ericwang2006/ttnode/)-->
 
+**今天(2020.3.19)官方升级了新版本, 导致报错(sh: 1: /mnts/ipdbcf: Exec format error), 暂时尝试在宿主机执行**
+
+`docker run --rm --privileged multiarch/qemu-user-static --reset -p yes`
+
+**然后再重启容器**
+
 # 甜糖星愿镜像
 
 - 基于debian:stable-slim构建
